@@ -9,9 +9,21 @@
   </head>
   <body>
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
+    <header>
+      <form id="search-form" class="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          id="searchQuery"
+          placeholder="Search images..."
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <div id="gallery" class="gallery"></div>
+    <div id="loader" class="loader hidden">Loading...</div>
     <main>
-      <!-- Loads the specified .html file -->
       <load src="./partials/vite-promo.html" />
       <load src="./partials/badges.html" />
     </main>
